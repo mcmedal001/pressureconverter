@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<title>Area Converter</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 col-sm-4"></div>
+			<div class="col-md-8 col-sm-4">
+				<h1 class="display-4 text-center mb-4">Pressure Converter</h1>
+				<form>
+					<div class="form-group">
+						<input id="barInput" type="number" name="barpressure" placeholder="Enter Pressure in Bars..." class="form-control form-control-lg">
+					</div>
+				</form>
+				<div id="output">
+					<div class="card bg-info mb-2">
+						<div class="card-block">
+							<h4>In N/m<sup>2</sup>:</h4>
+							<div id="nmsqOutput"  class="ml-2"></div>
+						</div>
+					</div>
+
+					<div class="card bg-primary mb-2">
+						<div class="card-block">
+							<h4>In kPa:</h4>
+							<div id="pascalOutput" class="ml-2"></div>
+						</div>
+					</div>
+
+					<div class="card bg-danger mb-2">
+						<div class="card-block">
+							<h4>In mmHg:</h4>
+							<div id="mmHGOutput" class="ml-2"></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-4"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
